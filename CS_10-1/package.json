@@ -1,7 +1,0 @@
-{
-    "name": "decimal translator",
-    "type": "module",
-    "description": "decimal Translator",
-    "main": "./decimalTranslator.js",
-    "author": "dony"
-  }
