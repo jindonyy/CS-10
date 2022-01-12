@@ -1,4 +1,5 @@
 # 논리게이트와 바이트 덧셈 구현해보기
+https://github.com/jindonyy/CS10/blob/master/CS10-1/binaryAdder.js
 ## 논리 게이트
 - and, or, not 논리 연산자만 활용해서 구현
 
@@ -8,13 +9,14 @@
 - 자리올림(carry) : 자리올림 비트를 구하는 내부 함수를 구현
 - 반쪽덧셈(halfadder) : 입력을 두 개 받아서, 합(sum)과 자리올림(carry)를 배열로 리턴하는 함수를 구현
 
-## 1바이트 덧셈
+## 바이트 덧셈
 - 8비트를 boolean 타입의 배열로 2개를 입력 받는다.
 - 자리올림(carry) + 전체 합(sum)을 순서대로 배열로 담아서 리턴하는 함수를 구현
 - 낮은 자리(LSB)가 배열의 앞쪽에 오도록 표현
 <br>
 
 # 여러 진법으로 변환하는 함수 구현해보기
+https://github.com/jindonyy/CS10/blob/master/CS10-1/decimalTranslator.js
 ## 10진법 -> 2진법 으로 변환
 - 0부터 256 미만의 정수형 10진수를 2진수 배열로 변환하는 함수를 구현
 - 사칙연산만으로 구현해보기
