@@ -14,3 +14,4 @@
 |메모리 구조|https://gist.github.com/jindonyy/02050024bc7a7a27be1c19a5e9881b86|
 |함수형 프로그래밍|https://gist.github.com/jindonyy/7750fcb139b6c0d8737c040a3f6c6251|
 |멀티 프로세스와 스레드|https://gist.github.com/jindonyy/10e988a921186380cce52b0b35ae1954|
+|이벤트 / 비동기|https://gist.github.com/jindonyy/9c56cc51fb589290598ab88c228e41fd|
