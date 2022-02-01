@@ -34,12 +34,89 @@
 클래스에서 정의한 것을 토대로 실제 메모리에 할당된 것으로 실제 프로그램에서 사용되는 데이터이다.  
 <br>
 
-## 예시)
-피겨선수 = 클래스  
-김연아, 아사다마오 = 인스턴스  
-=> 클래스를 인스턴스화하여 객체를 생성한다.  
+## 예시
+클래스는 **틀**에 비유할 수 있다.  
+하나의 클래스를 가지고 여러 개의 인스턴스를 만들 수 있기 때문이다.  
+예를 들어, 그릇을 찍어내는 틀이 있다고 하자.  
+그 틀로 하늘 색 그릇, 흰색 그릇, 검정 그릇 등을 만들 수 있다.  
+이 그릇들의 색깔(속성)은 각각 다르지만 이 그릇들로 하는 기본 행위(method)들은 동일하다.  
+클래스를 인스턴스화하면 constructor내의 속성들과 인스턴스 메서드(프로퍼티 메서드)가 함께 생성된다고 착각할 수 있다.  
+constructor는 생성자 함수로 각 인스턴스를 생성할 때 새로운 this들을 만들어낸다.  
+때문에 각 인스턴스들의 다른 참조값을 가진 속성으로 들어가지만,  
+각각의 인스턴스들의 메서드들은 생성 class의 prototype으로 연결되어 있어 모두 같은 참조 값의 메서드를 사용하고 있는 것이다.
+Animal이라는 클래스를 찍어내어 rabbit, deer로 인스턴스화하면,  
+그 rabbit, deer라는 각각 다른 참조 값을 가진 객체이지만  
+메서드들은 Animal의 prototype으로 연결되어 있는 메서드를 사용하는 것이다.  
+```javascript
+class Animal {
+  constructor() {
+    this.attribute = function () {
+      console.log('a');
+    }
+  }
+  behavior() {
+    console.log('b');
+  }
+}
+
+const rabbit = new Animal();
+const deer = new Animal();
+
+rabbit.attribute === deer.attribute // false
+rabbit.behavior === deer.behavior // true
+```
 <br>
-<img width="600" src="https://user-images.githubusercontent.com/17706346/149660044-d7546bc7-ba52-4637-b6ce-b8862d714fa6.png">  
+<img width="600" src="https://user-images.githubusercontent.com/17706346/152006895-8444f404-e66b-49e9-b6cf-e1d8684b2af6.png">  
+<img width="600" src="https://user-images.githubusercontent.com/17706346/152005583-45597355-0d20-4732-995e-9186c668115c.png">  
+<br>
+
+## 정적 메소드
+인스턴스 메소드들과 달리 정적 메소드(static method)는 인스턴스가 사용할 수 없는 메소드들이다.  
+앞에 sttic을 붙여 사용하며, 생성 클래스를 통해서만 사용할 수 있다.
+```javascript
+class Animal {
+  constructor(color) {
+    this.color = color;
+  }
+  instanceMethod() {
+    console.log('b');
+  }
+  static staticMethod() {
+    console.log('c');
+  }
+}
+
+const rabbit = new Animal('white');
+
+rabbit.instanceMethod(); // b
+Animal.staticMethod(); // c
+```
+함수로 변경한다면 아래와 같다.
+```javascript
+const Animal = function(color) {
+  this.color = color;
+}
+Animal.prototype.instanceMethod() {
+  console.log('b');
+}
+Animal.staticMethod() {
+  console.log('c');
+}
+
+const rabbit = new Animal();
+
+rabbit.instanceMethod(); // b
+Animal.staticMethod(); // c
+```
+정적 메서드는 인스턴스 없이 클래스에서 바로 호출이 가능하고, 이런 특성 때문에 유틸리티 함수를 만드는데 유용하게 사용된다.  
+즉, 특정 클래스의 인스턴스가 아닌 클래스 전체에 필요한 기능을 만들 때 사용할 수 있다.  
+물론 그냥 function으로 선언해도 문제 없지만 모듈의 응집도를 높이고 더욱 객체지향적인 프로그래밍을 하기 위해서는 필요한 기능이라고 생각된다.  
+MDN - "정적 메소드는 객체를 생성하거나 복제하는 기능과 같은 유틸리티 기능에 사용된다.  
+정적 프로퍼티는 캐시, 고정된 설정, 또는 각 인스턴스마다 복제할 필요가 없는 데이터 등을 만들 때 유용하다."  
+<br>
+
+## Reference
+[https://chanyeong.com/blog/post/24](https://chanyeong.com/blog/post/24)  
 <br>
 <br>
 
