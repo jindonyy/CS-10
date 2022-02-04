@@ -133,6 +133,7 @@ OS에서 할당해준 Stack영역의 메모리 영역을 넘어버려 발생하�
 <br>
 
 ## Reference
+이미지 출처: codesquad - JK 마스터 강의  
 [https://st-lab.tistory.com/198](https://st-lab.tistory.com/198)  
 [https://www.youtube.com/watch?v=uDZCfiCYfsU](https://www.youtube.com/watch?v=uDZCfiCYfsU)  
 [https://www.youtube.com/watch?v=xjHQLXsSMkY](https://www.youtube.com/watch?v=xjHQLXsSMkY)  

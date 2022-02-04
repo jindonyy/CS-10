@@ -212,5 +212,6 @@ console.log(triangle.pointLength); // 10
 <br>
 
 ## Reference
+이미지 출처: codesquad - JK 마스터 강의  
 [https://ko.javascript.info/class-inheritance#ref-231](https://ko.javascript.info/class-inheritance#ref-231)  
 [https://parksb.github.io/article/1.html](https://parksb.github.io/article/1.html)
