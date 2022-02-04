@@ -2,8 +2,8 @@
 더 나은 프로그램을 만들기 위한 프로그래밍 패러다임 중 하나이다.  
 프로그래밍에서 필요한 데이터를 추상화시켜 **상태**와 **행위**를 가진 객체를 만들고 그 객체들 간의 유기적인 상호작용을 통해 로직을 구성하는 프로그래밍 방법이다.  
 절차 지향 프로그래밍과 반대라고 할 수 있다.  
-<img width="1000" src="https://user-images.githubusercontent.com/17706346/152006895-8444f404-e66b-49e9-b6cf-e1d8684b2af6.png">  
-<img width="1000" src="https://user-images.githubusercontent.com/17706346/152005583-45597355-0d20-4732-995e-9186c668115c.png">  
+<img width="1000" src="https://user-images.githubusercontent.com/17706346/152006648-c1d3c763-1e8f-4578-8023-24668e600769.png">  
+<img width="1000" src="https://user-images.githubusercontent.com/17706346/152007323-4494c413-8faa-47bb-8770-2a049c1013cf.png">
 <br>
 
 ## 객체 지향 프로그래밍의 장점 👍
@@ -66,8 +66,8 @@ rabbit.attribute === deer.attribute // false
 rabbit.behavior === deer.behavior // true
 ```
 <br>
-<img width="600" src="https://user-images.githubusercontent.com/17706346/152006895-8444f404-e66b-49e9-b6cf-e1d8684b2af6.png">  
-<img width="600" src="https://user-images.githubusercontent.com/17706346/152005583-45597355-0d20-4732-995e-9186c668115c.png">  
+<img width="1000" src="https://user-images.githubusercontent.com/17706346/152006895-8444f404-e66b-49e9-b6cf-e1d8684b2af6.png">  
+<img width="1000" src="https://user-images.githubusercontent.com/17706346/152005583-45597355-0d20-4732-995e-9186c668115c.png">  
 <br>
 
 ## 정적 메소드
