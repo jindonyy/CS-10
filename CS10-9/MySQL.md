@@ -57,7 +57,7 @@
     1a8cb7f58c24   mysql:5.7   "docker-entrypoint.s…"   About a minute ago   Up 53 seconds   0.0.0.0:3306->3306/tcp, 33060/tcp   mysql-container
     ```
 1.  MySQL 컨테이너 bash 쉘 접속  
-    `docker exec -it mysql-container bash`  
+    `docker exec -it 컨테이너명 bash`  
     ```bash
     $ docker exec -it mysql-container bash
     root@dc557b92f573:/# mysql -u root -p
